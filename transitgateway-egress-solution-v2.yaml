@@ -420,14 +420,14 @@ Resources:
   AppBlackhole10Route:
     Type: "AWS::EC2::TransitGatewayRoute"
     Properties:
-      Blackhole: Yes
+      Blackhole: TRUE
       DestinationCidrBlock: 10.0.0.0/8
       TransitGatewayRouteTableId: !Ref AppTransitGatewayRouteTable
 
   AppBlackhole172Route:
     Type: "AWS::EC2::TransitGatewayRoute"
     Properties:
-      Blackhole: Yes
+      Blackhole: TRUE
       DestinationCidrBlock: 172.16.0.0/12
       TransitGatewayRouteTableId: !Ref AppTransitGatewayRouteTable
 
@@ -438,7 +438,7 @@ Resources:
 #  AppBlackhole192Route:
 #    Type: "AWS::EC2::TransitGatewayRoute"
 #    Properties:
-#      Blackhole: Yes
+#      Blackhole: TRUE
 #      DestinationCidrBlock: 192.168.0.0/16
 #      TransitGatewayRouteTableId: !Ref AppTransitGatewayRouteTable
 
